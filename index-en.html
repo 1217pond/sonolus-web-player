@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>sonolus web player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div id="title-div" >
+      <h1 class="title">Sonolus Web Player</h1>
+      <div id="start-trig">START!</div>
+      <div class="TOStext">By starting, you agree to the <a href="TOS-en.html" target="_blank" class="TOStag">TOS</a>.</div>
+      <div class="feedback">Contact us:<a href="mailto:weier_feedback@ccmail.uk">weier_feedback@ccmail.uk</a></div>
+      <text id="version">Version alpha-0.1.0  SonolusVersion 0.5.5</text>
+    </div>
+
+    <div id="menu" hidden>
+      <h3>Server</h3>
+      <div id="serv" class="selector-window">
+        <a id="serv-adder" class="text-triger">+ add server...</a>
+      </div>
+      <h3>Collection</h3>
+      <div id="colec" class="selector-window">
+        <a id="colec-adder" class="text-triger">+ add collection...</a>
+      </div>
+    </div>
+
+    <div id="serv-add-menu" hidden>
+      <h3>Add server</h3>
+      <p>name</p>
+      <input type="text" style="width:300px" id="name">
+      <p>address</p>
+      <input type="text" style="width:300px" id="address">
+      <button id="cancel-trig">cancel</button>
+      <button id="add-trig">add</button>
+      <p>Do not put "/" at the end of the address.</p>
+    </div>
+
+    <div id="colec-add-menu" hidden>
+      <h3>Add collection</h3>
+      <p>name</p>
+      <input type="text" style="width:300px" id="name">
+      <button id="cancel-trig">cancel</button>
+      <button id="add-trig">add</button>
+    </div>
+
+    <div id="serv-editor" hidden>
+      <h3>edit server</h3>
+      <p>name</p>
+      <input type="text" style="width:300px" id="name">
+      <p>address</p>
+      <input type="text" style="width:300px" id="address">
+      <button id="cancel-trig">cancel</button>
+      <button id="delete-trig" style="color:red">delete</button>
+      <button id="edit-trig">save</button>
+      <p>Do not put "/" at the end of the address.</p>
+    </div>
+
+    <div id="colec-editor" hidden>
+      <h3>edit collection</h3>
+      <p>name</p>
+      <input type="text" style="width:300px" id="name">
+      <div id="window" class="selector-window">
+
+      </div>
+      <button id="cancel-trig">cancel</button>
+      <button id="delete-trig" style="color:red">delete</button>
+      <button id="edit-trig">save</button>
+    </div>
+
+    <div id="serv-info" hidden>
+      <text>It may take some time to display.</text><br>
+      <button id="back-trg">back</button>
+      <h3>Level</h3>
+      <div id="level" class="selector-window">
+        <a id="more"  class="text-triger" data-type="levels">+ Show more levels...</a>
+      </div>
+      <h3>Skin</h3>
+      <div id="skin" class="selector-window">
+        <a id="more"  class="text-triger" data-type="skins">+ Show more skins...</a>
+      </div>
+      <h3>Background</h3>
+      <div id="back" class="selector-window">
+        <a id="more"  class="text-triger" data-type="backgrounds">+ Show more backgrounds...</a>
+      </div>
+      <h3>Effect</h3>
+      <div id="effect" class="selector-window">
+        <a id="more"  class="text-triger" data-type="effects">+ Show more effects...</a>
+      </div>
+      <h3>Particle</h3>
+      <div id="particle" class="selector-window">
+        <a id="more"  class="text-triger" data-type="particles">+ Show more particles...</a>
+      </div>
+      <h3>Engine</h3>
+      <div id="engine" class="selector-window">
+        <a id="more"  class="text-triger" data-type="engines">+ Show more engines...</a>
+      </div>
+    </div>
+
+    <div id="serv-more" hidden>
+      <h3 id="title" class="page-title"></h3>
+      <div class="selector-window" id="filter">
+        <text>Filter</text><br>
+        <div id="keywords">
+          <label>Search<input type="text"></input></label>
+          <button id="search">find</button>
+          <button id="cancel" style="color:red">cancel</button>
+        </div>
+      </div>
+      <div class="selector-window" id="window">
+        <button id="prev">prev ←</button>
+        <button id="next">→ next</button>
+        <button id="back">back</button><br>
+        <text id="page-number">1/?</text>
+      </div>
+    </div>
+
+    <div id="level-info" hidden>
+      <h2 id="title" class="page-title"></h2>
+      <div class="selector-window" id="info">
+
+      </div>
+      <div class="Info-back-trig" id="back">back</div>
+      <div class="Info-opt-trig" id="option">setting</div>
+      <div class="LevelInfo-run-trig" id="next">PLAY!</div>
+      <div class="selector-window" id="source-selector">
+        <div id="skin" style="height: 70px;" class="menu-selector"></div>
+        <div id="background" style="height: 70px;" class="menu-selector"></div>
+        <div id="effect" style="height: 70px;" class="menu-selector"></div>
+        <div id="particle" style="height: 70px;" class="menu-selector"></div>
+        <div id="engine" style="height: 70px;" class="menu-selector"></div>
+      </div>
+      <div class="selector-window" id="item-selector">
+        Reference:<select>
+          <option value="default">default</option>
+        </select><br>
+        <div id="window"></div>
+      </div>
+    </div>
+
+    <div id="level-option" hidden>
+      <h2 class="page-title">Settings</h2>
+      <h3 class="page-title">Level settings</h3>
+      <div class="selector-window" id="level-op">
+
+      </div>
+      <h3 class="page-title">System settings</h3>
+      <div class="selector-window" id="system-op">
+        <label>Audio offset:<input type="range" id="audio_offset" min="-0.5" max="0.5" step="0.01" value="0"><text></text>s</label><br>
+        <label>Input offset:<input type="range" id="input_offset" min="-0.5" max="0.5" step="0.01" value="0"><text></text>s</label><br>
+        <label>Render scale(unimplemented)：<input type="range" id="render_scale" min="0.4" max="1.2" step="0.05" value="1"><text></text>x</label><br>
+        <label>Homography:<input type="checkbox" id="homography"></label><br>
+        <label>Mesh vertices:<input type="range" id="mesh_vertexes" min="1" max="8" step="1" value="3"><text></text></label><br>
+        <label>Curv vertices:<input type="range" id="curv_vertexes" min="1" max="8" step="1" value="3"><text></text></label><br>
+        <label>Key assign:<input type="checkbox" id="key_assign_enable"><br><input type="file" id="key_assign"></label><br>
+        <label>Debug mode:<input type="checkbox" id="debug_mode"></label>
+      </div>
+      <button id="LevelOption-back">cancel</button>
+      <button id="LevelOption-save">save</button>
+    </div>
+
+    <div id="item-info" hidden>
+      <h2 id="title"></h2>
+      <h3 id="subtitle" style="color:gray"></h3>
+      <div class="selector-window" id="info">
+
+      </div>
+      <div class="Info-back-trig" id="back">back</div>
+      <div class="ItemInfo-run-trig" id="next">add</div>
+      <div class="ItemInfo-selector">Add to:<select id="selector"><option value="" id="init">Please select collection</option><option value="#add">add collection...</option></select></div>
+    </div>
+
+    <div id="player" hidden>
+      <p id="progress"></p>
+      <canvas id="window" hidden></canvas>
+    </div>
+
+    <div id="result" hidden>
+      <h3>Result</h3>
+      <div id="window" class="selector-window">
+        <h3 id="title">test music</h3>
+        <p id="arcade">ARCADE SCORE:</p>
+        <p id="accuracy">ACCURACY SCORE:</p>
+        <p id="max_combo">MAX COMBO:</p>
+        <p id="acc_result">
+          perfect:<br>
+          great:<br>
+          good:<br>
+          miss:
+        </p>
+      </div>
+      <button id="back">back</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

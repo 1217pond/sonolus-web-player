@@ -1,0 +1,106 @@
+{
+    "template_texts":{
+        "trigger":[
+            "Please enter that name.",
+            "Do you really want to delete this?",
+            "canceled.",
+            "Please select where to add."
+        ],
+        "message":[
+            "Changing to a non-default engine may result in unintended behavior. Is it OK?",
+            "The key assign was disabled because there was a problem with the key assign json file.",
+            "Engine startup aborted due to problem with key assign json file."
+        ],
+        "words":[
+            "Author",
+            "Artist",
+            "ARCADE SCORE",
+            "ACCURACY SCORE",
+            "MAX COMBO"
+        ],
+        "html":[
+            "<option value=\"default\">Default</option>",
+            "<option value=\"\" id=\"init\">Collection select</option><option value=\"#add\">Add collection...</option>"
+        ],
+        "load_mes":[
+            "Engine data getting... ",
+            "Success<br>Engine configuration getting... ",
+            "Success<br>Skin data getting... ",
+            "Success<br>Level data getting... ",
+            "Success<br>Particle data getting... ",
+            "Success<br>Background data getting... ",
+            "Success<br>Background configuration getting... ",
+            "Success<br>Level options loading... ",
+            "Success<br>System options loading... ",
+            "Success<br>",
+            "Effect data/sound getting... ",
+            "Effect data gatting... ",
+            "Success<br>Effect sound getting... ",
+            "Success<br>Skin image gatting... ",
+            "Success<br>Particle image gatting... ",
+            "Success<br>Background image getting... ",
+            "Success<br>System texture getting... ",
+            "Success<br>Music file getting... ",
+            "Loading... ",
+            "Success<br><button id=\"play_button\">>Play!</button><br>",
+            "Renderer building... ",
+            "Starting now... ",
+            "Success<br>Preparation...",
+            "Success<br>Spawn ordering...",
+            "Success<br>Preparing to play music..."
+        ]
+    },
+    "format_texts":[
+        "Failed to add to collection. Item type \"%0\" does not exist.",
+        "<text>Author: %0<br>Artist: %1<br><br>Description: %2<br><br>Recommend:</text>",
+        "<text>Author: %0<br><br>Description: %1<br><br>Recommend:</text>"
+    ],
+    "localization_objects":{
+        "item_name_singular":{
+            "skin":"Skin",
+            "background":"Background", 
+            "effect":"Effect", 
+            "particle":"Particle", 
+            "engine":"Engine"
+        },
+        "item_name_plural":{
+            "levels":"Level",
+            "skins":"Skin",
+            "backgrounds":"Background",
+            "effects":"Effect",
+            "particles":"Particle",
+            "engines":"Engine"
+        },
+        "option_label":{
+            "#OFFSET_AUDIO":"audio offset",
+            "#OFFSET_INPUT":"input offset",
+            "#SPEED":"playback speed",
+            "#AUTO":"auto play",
+            "#EFFECT":"effect",
+            "#STAGE":"stage",
+            "#STAGE_SIZE":"stage size",
+            "#STAGE_ALPHA":"stage alpha",
+            "#STAGE_COVER_HORIZONTAL":"stage cover horizontal",
+            "#STAGE_COVER_VERTICAL":"stage cover vertical",
+            "#STAGE_COVER_ALPHA":"stage cover alpha",
+            "#STAGE_ASPECTRATIO_LOCK":"lock aspect-ratio of stage",
+            "#LANE_EFFECT":"lane effect",
+            "#LANE_EFFECT_SIZE":"lane effect size",
+            "#LANE_EFFECT_ALPHA":"lane effect alpha",
+            "#SLOT_EFFECT":"slot effect",
+            "#SLOT_EFFECT_SIZE":"slot effect size",
+            "#SLOT_EFFECT_ALPHA":"slot effect alpha",
+            "#NOTE_SPEED":"note speed",
+            "#NOTE_EFFECT":"note effect",
+            "#NOTE_EFFECT_SIZE":"note effect size",
+            "#CONNECTOR":"connector",
+            "#CONNECTOR_SIZE":"connector size",
+            "#CONNECTOR_ALPHA":"connector alpha",
+            "#SIMLINE":"Simline",
+            "#SIMLINE_SIZE":"Simline size",
+            "#SIMLINE_ALPHA":"Simline alpha",
+            "#MIRROR":"mirror"
+        }
+        
+    }
+}
