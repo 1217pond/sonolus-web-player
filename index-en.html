@@ -12,11 +12,12 @@
       <div id="start-trig">START!</div>
       <div class="TOStext">By starting, you agree to the <a href="TOS-en.html" target="_blank" class="TOStag">TOS</a>.</div>
       <div class="feedback">Contact us:<a href="mailto:weier_feedback@ccmail.uk">weier_feedback@ccmail.uk</a></div>
-      <text id="version">Version alpha-0.1.0  SonolusVersion 0.5.5</text>
+      <text id="version">GUI Version: alpha-0.2.0<br>System Version: alpha-0.1.1<br>Sonolus Version: 0.5.5</text>
     </div>
 
     <div id="menu" hidden>
       <h3>Server</h3>
+      <h4 id="decache-trg">Delete Cache</h4>
       <div id="serv" class="selector-window">
         <a id="serv-adder" class="text-triger">+ add server...</a>
       </div>
@@ -153,6 +154,7 @@
         <label>Homography:<input type="checkbox" id="homography"></label><br>
         <label>Mesh vertices:<input type="range" id="mesh_vertexes" min="1" max="8" step="1" value="3"><text></text></label><br>
         <label>Curv vertices:<input type="range" id="curv_vertexes" min="1" max="8" step="1" value="3"><text></text></label><br>
+        <label>max fps:<input type="range" id="max_fps" min="24" max="60" step="1" value="30"><text></text></label><br>
         <label>Key assign:<input type="checkbox" id="key_assign_enable"><br><input type="file" id="key_assign"></label><br>
         <label>Debug mode:<input type="checkbox" id="debug_mode"></label>
       </div>

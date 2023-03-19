@@ -64,6 +64,13 @@ body{
     font-size: 20px;
 }
 
+#decache-trg{
+    position: fixed;
+    top:0px;
+    right: 20px;
+    color: #FFA0A0;
+}
+
 .selector-window{
     border: 3px solid lightgray;
     padding: 10px 20px;
