@@ -11,9 +11,11 @@ self.addEventListener("install", (e) => {
                         if (response.ok){
                             //pass
                         }else{
-                            throw Error(`can't get "${url}"`);
+                            console.error(`can't get "${url}"`);
                         } 
                         return cache.put(url, response);
+                    }).catch(err => {
+                        console.error(err);
                     });
                 }),
             )
@@ -49,8 +51,8 @@ self.addEventListener('fetch', function(event) {
                     return response;
                 }else{
                     return new Response(null,{
-                        status:404,
-                        statusText:"not found",
+                        status:504,
+                        statusText:"net failed",
                     });
                 }
             }).catch((error) => {
@@ -89,11 +91,18 @@ self.addEventListener('activate', (evt) => {
 const cacheName = "SWP-PWA-v0.1.0";
 const contentToCache = [
     "./index.html",
-    "./assets/favicon.ico",
-    "./assets/manifest.json",
+    "./manifest.json",
+
     "./assets/node_calc.wasm",
+    "./assets/index.js",
+    "./assets/index.css",
+
+    "./icons/favicon.ico",
     "./icons/favicon.png",
+
     "./localization/ja-localization-react.json",
+    "./localization/en-localization-react.json",
+
     "./textures/cancel.svg",
     "./textures/caution_orange.svg",
     "./textures/caution.svg",
@@ -102,10 +111,9 @@ const contentToCache = [
     "./textures/delete.svg",
     "./textures/edit.svg",
     "./textures/loading.svg",
+    "./textures/noimage.png",
     "./textures/system_tex.webp",
-    "./textures/unknown.png",
+    
     "./zlib/gunzip.min.js",
     "./zlib/unzip.min.js",
-    "./assets/index.js",
-    "./assets/index.css",
 ];

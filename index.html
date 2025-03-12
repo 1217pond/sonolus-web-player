@@ -6,7 +6,7 @@
     <title>sonolus web player</title>
     <link rel="icon" href="./icons/favicon.ico" />
     <link rel="apple-touch-icon" href="./icons/favicon.png">
-    <link rel="manifest" href="./assets/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <script type="module" crossorigin src="./assets/index.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index.css">
   </head>
@@ -27,89 +27,7 @@
     </div>
     <div id="root"></div>
     <div id="player-window" hidden>
-     <!-- <canvas id="main-canvas"></canvas> -->
     </div>
-
-    <!--
-
-    <div id="level-info" hidden>
-      <h2 id="title" class="page-title"></h2>
-      <div class="selector-window" id="info">
-
-      </div>
-      <div class="Info-back-trig" id="back">戻る</div>
-      <div class="Info-opt-trig" id="option">設定</div>
-      <div class="LevelInfo-run-trig" id="next">プレイ！</div>
-      <div class="selector-window" id="source-selector">
-        <div id="skin" style="height: 70px;" class="menu-selector"></div>
-        <div id="background" style="height: 70px;" class="menu-selector"></div>
-        <div id="effect" style="height: 70px;" class="menu-selector"></div>
-        <div id="particle" style="height: 70px;" class="menu-selector"></div>
-        <div id="engine" style="height: 70px;" class="menu-selector"></div>
-      </div>
-      <div class="selector-window" id="item-selector">
-        参照：<select>
-          <option value="default">デフォルト</option>
-        </select><br>
-        <div id="window"></div>
-      </div>
-    </div>
-
-    <div id="level-option" hidden>
-      <h2 class="page-title">設定</h2>
-      <h3 class="page-title">レベル設定</h3>
-      <div class="selector-window" id="level-op">
-
-      </div>
-      <h3 class="page-title">システム設定</h3>
-      <div class="selector-window" id="system-op">
-        <label>オーディオオフセット：<input type="range" id="audio_offset" min="-0.5" max="0.5" step="0.01" value="0"><text></text>s</label><br>
-        <label>入力オフセット：<input type="range" id="input_offset" min="-0.5" max="0.5" step="0.01" value="0"><text></text>s</label><br>
-        <label>レンダリングスケール(未実装)：<input type="range" id="render_scale" min="0.4" max="1.2" step="0.05" value="1"><text></text>x</label><br>
-        <label>射影変換：<input type="checkbox" id="homography"></label><br>
-        <label>メッシュの頂点数：<input type="range" id="mesh_vertexes" min="1" max="8" step="1" value="3"><text></text></label><br>
-        <label>カーブメッシュの頂点数：<input type="range" id="curv_vertexes" min="1" max="8" step="1" value="3"><text></text></label><br>
-        <label>最大fps:<input type="range" id="max_fps" min="24" max="60" step="1" value="30"><text></text></label><br>
-        <label>テクスチャスケール(メモリ使用量に影響):<input type="range" id="texture_scale" min="0.2" max="1" step="0.05" value="0.5"><text></text></label><br>
-        <label>キーアサイン：<input type="checkbox" id="key_assign_enable"><br><input type="file" id="key_assign"></label><br>
-        <label>デバッグモード：<input type="checkbox" id="debug_mode"></label>
-      </div>
-      <button id="LevelOption-back">キャンセル</button>
-      <button id="LevelOption-save">保存</button>
-    </div>
-
-    <div id="item-info" hidden>
-      <h2 id="title"></h2>
-      <h3 id="subtitle" style="color:gray"></h3>
-      <div class="selector-window" id="info">
-
-      </div>
-      <div class="Info-back-trig" id="back">戻る</div>
-      <div class="ItemInfo-run-trig" id="next">追加</div>
-      <div class="ItemInfo-selector">追加先:<select id="selector"><option value="" id="init">コレクションを選択</option><option value="#add">コレクションを追加...</option></select></div>
-    </div>
-
-    <div id="player" hidden>
-      <p id="progress"></p>
-      <canvas id="window" hidden></canvas>
-    </div>
-
-    <div id="result" hidden>
-      <h3>リザルト</h3>
-      <div id="window" class="selector-window">
-        <h3 id="title">test music</h3>
-        <p id="arcade">アーケードスコア:</p>
-        <p id="accuracy">精度スコア:</p>
-        <p id="max_combo">最大コンボ:</p>
-        <p id="acc_result">
-          perfect:<br>
-          great:<br>
-          good:<br>
-          miss:
-        </p>
-      </div>
-      <button id="back">戻る</button>
-    </div>-->
     <script type="text/javascript" src="./zlib/gunzip.min.js"></script>
     <script type="text/javascript" src="./zlib/unzip.min.js"></script>
     

@@ -6,7 +6,7 @@
         "に同意したものとみなします。":".",
         "質問はDiscordへ":"Ask a question on Discord",
         "サーバー":"server",
-        "キャッシュ削除":"Remove cache",
+        "キャッシュ削除":"Clear cache",
         "サーバーを追加":"Add a new server",
         "コレクション":"collection",
         "コレクションを追加":"Add a new collection",
@@ -81,6 +81,8 @@
         "楽曲ロード":"Loading BGM",
         "キーアサインロード":"Loading key assignment file",
         "ロード完了":"Loading source data completed.",
+        "異常停止":"Stopped due to an error.",
+        "再読み込み推奨":"It is recommended to reload the page as it may cause instability.",
         "ビットマップフォント構築中":"Building a bitmap font",
         "ビットマップフォント構築完了":"Building a Bitmap font completed.",
         "キーアサイン異常停止":"There was a problem with the key assignment file, so engine startup was aborted.",
@@ -96,6 +98,7 @@
         "検索機能はありません":"Search is not available.",
         "検索":"Search",
         "検索取消":"Cancel search",
+        "required設定必須":"You will not be able to search if search items marked with ⚠️ are left at their default values.",
 
         "posts":"posts",
         "playlists":"playlists",
@@ -126,7 +129,6 @@
         "#OFFSET_INPUT":"Input offset",
         "#SPEED":"Speed",
         "#AUTO":"Auto",
-        "#EFFECT":"Effect",
         "#STAGE":"Stage visibility",
         "#STAGE_SIZE":"Stage size",
         "#STAGE_ALPHA":"Stage alpha",
@@ -160,6 +162,16 @@
         "#SECOND_UNIT":"s",
         "#KEYWORDS":"keywords",
         "#RATING_MINIMUM":"Minimum rating",
-        "#RATING_MAXIMUM":"Maximum rating"
+        "#RATING_MAXIMUM":"Maximum rating",
+        "#POST":"Post",
+        "#LEVEL":"Level",
+        "#SKIN":"Skin",
+        "#BACKGROUND":"Background",
+        "#EFFECT":"Effect",
+        "#PARTICLE":"Particle",
+        "#ENGINE":"Engine",
+        "#REVIEWING":"Reviewing",
+        "#DRAFT":"Draft",
+        "#SERVER":"Server"
     }
 }
