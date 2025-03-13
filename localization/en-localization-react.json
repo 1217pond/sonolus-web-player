@@ -81,6 +81,7 @@
         "楽曲ロード":"Loading BGM",
         "キーアサインロード":"Loading key assignment file",
         "ロード完了":"Loading source data completed.",
+        "前処理中":"Preprocessing...",
         "異常停止":"Stopped due to an error.",
         "再読み込み推奨":"It is recommended to reload the page as it may cause instability.",
         "ビットマップフォント構築中":"Building a bitmap font",
