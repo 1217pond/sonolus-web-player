@@ -123,7 +123,21 @@
         "effect":"エフェクト",
         "particle":"パーティクル",
         "engine":"エンジン",
-        "configuration":"コンフィグ"
+        "configuration":"コンフィグ",
+
+        "bgm_volume":"BGM音量",
+        "effect_volume":"エフェクト音量",
+        "audio_offset":"オーディオオフセット",
+        "input_offset":"入力オフセット",
+        "mesh_vertexes":"四角形メッシュの頂点数",
+        "curv_vertexes":"カーブメッシュの頂点数",
+        "max_fps":"最大fps(0で最大限)",
+        "texture_scale":"テクスチャスケール(メモリ使用量に影響)",
+        "render_scale":"レンダリングスケール",
+        "start_interval":"開始時のインターバル時間",
+        "unpause_interval":"ポーズ解除時のインターバル時間",
+        "debug_mode":"デバッグモード",
+        "antialias":"アンチエイリアス"
     },
     "labels":{
         "#OFFSET_AUDIO":"オーディオオフセット",
